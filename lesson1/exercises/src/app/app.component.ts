@@ -1,8 +1,4 @@
 import { Component, ViewEncapsulation } from '@angular/core';
-<<<<<<< HEAD
-
-=======
->>>>>>> tmp
 
 @Component({
   selector: 'app-root',

@@ -1,14 +1,8 @@
 .chores{
     font-family: Georgia, 'Times New Roman', Times, serif;
-<<<<<<< HEAD
-    color: #91A6FF;
-    font-size: 15px;
-    border-style: double; 
-=======
     color: #DB2B39;
     font-size: 15px;
-    border-style: double;
->>>>>>> tmp
+    border-style: double; 
 }
 
 .chores h3{
