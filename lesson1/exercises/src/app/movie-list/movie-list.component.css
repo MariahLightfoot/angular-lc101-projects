@@ -1,7 +1,13 @@
 .movies{
+<<<<<<< HEAD
     color: #3C91E6;
     font-size: 15px;
     border-style: double; 
+=======
+    color: #F0CEA0;
+    font-size: 15px;
+    border-style: double;
+>>>>>>> tmp
 }
 
 .movies h3{
