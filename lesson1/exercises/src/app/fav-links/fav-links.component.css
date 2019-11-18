@@ -1,5 +1,9 @@
+.favLinks{
+    border-style: double; 
+}
+
 *{
-    color: #931621;
+    color: white;
     text-decoration: none;
     text-align: center;
 }

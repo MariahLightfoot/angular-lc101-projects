@@ -1,6 +1,7 @@
 .movies{
-    color: #326771;
+    color: #3C91E6;
     font-size: 15px;
+    border-style: double; 
 }
 
 .movies h3{
