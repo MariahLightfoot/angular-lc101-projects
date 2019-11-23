@@ -12,4 +12,8 @@ export class MovieListComponent implements OnInit {
 
    ngOnInit() {
    }
+
+   addMovie(newTitle: string){
+      this.movies.push(newTitle);
+   }
 }
