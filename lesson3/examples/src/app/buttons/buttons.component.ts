@@ -11,6 +11,8 @@ export class ButtonsComponent implements OnInit {
    inactiveSilver: boolean = false;
    inactiveCopper: boolean = false;
 
+   jokeButtonHeading: string = "Joke Button >:)"
+
    constructor() { }
 
    ngOnInit() { }
