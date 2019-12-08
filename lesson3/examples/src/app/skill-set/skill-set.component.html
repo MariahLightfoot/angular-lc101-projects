@@ -1,6 +1,6 @@
 <div class="skills">
    <h3>{{listHeading}}</h3>
-   <ol>
+   <ol [style.color]="alternateColor" [type]="bulletType">
       <li *ngFor="let skill of skills">{{skill}}</li>
    </ol>
    <hr>
