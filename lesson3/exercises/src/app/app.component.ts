@@ -66,18 +66,18 @@ export class AppComponent {
       console.log(this.width)
     }
     
-    if(direction === 'up'){
-      let movement = parseInt(rocketImage.style.down) + 10 + 'px';
-      rocketImage.style.down = movement;
+    if(direction === 'top'){
+      let movement = parseInt(rocketImage.style.bottom) + 10 + 'px';
+      rocketImage.style.bottom = movement;
       this.height = this.height + 10000;
       console.log(direction)
       console.log(movement)
       console.log(this.height)
     }
     
-    if(direction === 'down'){
-      let movement = parseInt(rocketImage.style.up) + 10 + 'px';
-      rocketImage.style.down = movement;
+    if(direction === 'bottom'){
+      let movement = parseInt(rocketImage.style.top) + 10 + 'px';
+      rocketImage.style.top = movement;
       this.height = this.height - 10000;
       console.log(direction)
       console.log(movement)
