@@ -23,23 +23,27 @@ export class AppComponent {
     } 
   }
 
-  handleLanding(){
+  handleLanding(rocketImage){
     let result = window.confirm('The shuttle is landing. Landing gear engaged.');
     if(result){
       this.color = 'green';
       this.height = 0;
       this.width = 0;
       this.message = 'The shuttle has landed.';
+      rocketImage.style.bottom = '0px';
+
     }
   }
 
-  abortMission(){
+  abortMission(rocketImage){
     let result = window.confirm('Do you really want to abort the mission?');
     if(result){
       this.color = 'red';
       this.height = 0;
       this.width = 0;
       this.message = 'Mission aborted.';
+      rocketImage.style.bottom = '0px';
+
     }
   }
 
@@ -51,7 +55,9 @@ export class AppComponent {
       console.log(direction)
       console.log(movement)
       console.log(this.width)
-    } else if(direction === 'left'){
+    } 
+    
+    if(direction === 'left'){
       let movement = parseInt(rocketImage.style.right) + 10 + 'px';
       rocketImage.style.right = Number(movement);
       this.width = this.width - 10000;
@@ -66,7 +72,7 @@ export class AppComponent {
       this.height = this.height + 10000;
       console.log(direction)
       console.log(movement)
-      console.log(this.width)
+      console.log(this.height)
     }
     
     if(direction === 'down'){
@@ -75,7 +81,7 @@ export class AppComponent {
       this.height = this.height - 10000;
       console.log(direction)
       console.log(movement)
-      console.log(this.width)
+      console.log(this.height)
     }
   }
 }
