@@ -58,8 +58,8 @@ export class AppComponent {
     } 
     
     if(direction === 'left'){
-      let movement = parseInt(rocketImage.style.right) + 10 + 'px';
-      rocketImage.style.right = Number(movement);
+      let movement = parseInt(rocketImage.style.left) - 10 + 'px';
+      rocketImage.style.left = Number(movement);
       this.width = this.width - 10000;
       console.log(direction)
       console.log(movement)
@@ -76,8 +76,8 @@ export class AppComponent {
     }
     
     if(direction === 'bottom'){
-      let movement = parseInt(rocketImage.style.top) + 10 + 'px';
-      rocketImage.style.top = movement;
+      let movement = parseInt(rocketImage.style.bottom) - 10 + 'px';
+      rocketImage.style.bottom = movement;
       this.height = this.height - 10000;
       console.log(direction)
       console.log(movement)
