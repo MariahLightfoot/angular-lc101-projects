@@ -61,7 +61,7 @@ export class AppComponent {
     
     if(direction === 'left'){
       let movement = parseInt(rocketImage.style.left) - 10 + 'px';
-      rocketImage.style.left = Number(movement);
+      rocketImage.style.left = movement;
       this.width = this.width - 10000;
       console.log(direction)
       console.log(movement)
