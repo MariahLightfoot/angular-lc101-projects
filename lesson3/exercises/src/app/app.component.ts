@@ -42,4 +42,40 @@ export class AppComponent {
       this.message = 'Mission aborted.';
     }
   }
+
+  moveRocket(rocketImage, direction){
+    if (direction === 'right') {
+      let movement = parseInt(rocketImage.style.left) + 10 + 'px';
+      rocketImage.style.left = movement;
+      this.width = this.width + 10000;
+      console.log(direction)
+      console.log(movement)
+      console.log(this.width)
+    } else if(direction === 'left'){
+      let movement = parseInt(rocketImage.style.right) + 10 + 'px';
+      rocketImage.style.right = Number(movement);
+      this.width = this.width - 10000;
+      console.log(direction)
+      console.log(movement)
+      console.log(this.width)
+    }
+    
+    if(direction === 'up'){
+      let movement = parseInt(rocketImage.style.down) + 10 + 'px';
+      rocketImage.style.down = movement;
+      this.height = this.height + 10000;
+      console.log(direction)
+      console.log(movement)
+      console.log(this.width)
+    }
+    
+    if(direction === 'down'){
+      let movement = parseInt(rocketImage.style.up) + 10 + 'px';
+      rocketImage.style.down = movement;
+      this.height = this.height - 10000;
+      console.log(direction)
+      console.log(movement)
+      console.log(this.width)
+    }
+  }
 }
