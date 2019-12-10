@@ -54,36 +54,43 @@ export class AppComponent {
       let movement = parseInt(rocketImage.style.left) + 10 + 'px';
       rocketImage.style.left = movement;
       this.width = this.width + 10000;
-      console.log(direction)
-      console.log(movement)
-      console.log(this.width)
     } 
     
     if(direction === 'left'){
       let movement = parseInt(rocketImage.style.left) - 10 + 'px';
       rocketImage.style.left = movement;
       this.width = this.width - 10000;
-      console.log(direction)
-      console.log(movement)
-      console.log(this.width)
     }
     
     if(direction === 'top'){
       let movement = parseInt(rocketImage.style.bottom) + 10 + 'px';
       rocketImage.style.bottom = movement;
       this.height = this.height + 10000;
-      console.log(direction)
-      console.log(movement)
-      console.log(this.height)
     }
     
     if(direction === 'bottom'){
       let movement = parseInt(rocketImage.style.bottom) - 10 + 'px';
       rocketImage.style.bottom = movement;
       this.height = this.height - 10000;
-      console.log(direction)
-      console.log(movement)
       console.log(this.height)
+    }
+  }
+
+  distanceFromEdge(){
+    if(this.width < -16000){
+      this.color = 'orange';
+    } 
+
+    if(this.width > 150000){
+      this.color = 'orange';
+    }
+
+    if(this.height < 10000){
+      this.color = 'orange'
+    }
+
+    if(this.height > 330000){
+      this.color = 'orange'
     }
   }
 }
